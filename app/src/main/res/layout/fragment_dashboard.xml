@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <TextView
+        android:id="@+id/text_find_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Student"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="51dp" />
+    <TextView
+        android:id="@+id/text_code_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_code"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft= "40dp">
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="325dp"
+            android:layout_height="35dp"
+            android:hint="Code"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_find_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:text="Find"
+        android:background="@color/yellow"
+        />
+
+    <TextView
+        android:id="@+id/text_current_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:text="Current Student"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/text_name_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example Student Name"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/text_identification_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identification number example"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/text_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="280dp"
+        android:text="Select a option"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_activate_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:text="Activate Student"
+        android:background="@color/green"/>
+    <Button
+        android:id="@+id/btn_deactivate_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:text="Deactivate Student"
+        android:background="@color/red"/>
+</RelativeLayout>
